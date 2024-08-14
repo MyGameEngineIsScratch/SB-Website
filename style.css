@@ -1,0 +1,365 @@
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: white; /*For browsers that dont support it*/
+  background-image: linear-gradient(-70deg, #ffda47ff, white);
+}
+
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#contentwrapper{
+padding: 10px;
+width: 95%;
+margin:auto;
+max-width: 1000px; 
+}
+
+/* CSS HEX */
+/*white: #ffffffff;
+--oxford-blue: #14213dff;
+--mustard: #ffda47ff;
+--dartmouth-green: #006647ff;
+--blue-munsell: #1d8a99ff;
+balc: #14213d
+*/
+
+body {margin:0;}
+
+/*menu formating*/
+.navigation-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.5);
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}  
+
+li {
+ float: right;
+}
+
+li a {
+  display: block;
+  color: #14213d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Outfit";
+}
+
+li a:hover:not(.active) {
+  border-bottom: 2px solid #111;
+}
+
+.active {
+   border-bottom: 2px solid #111;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: center;
+    
+    left:10px;
+    position: absolute;
+}
+
+/*misc*/
+.back-image{
+  z-index: -1;
+  opacity: 0.4;
+  -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+  }
+}
+
+.front-text{
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Outfit";
+  font-weight: bolder;
+  font-size: 200%;
+}
+
+hr{
+  color:#14213d;
+  border-style:solid;
+  height: 2px;
+}
+/* Contanier formating*/
+.container{
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.container2 {
+  padding: 64px;
+}
+.pcenter{
+  text-align: center;
+  font-size:20px;
+}
+
+/*text formating*/
+h3.center{
+  justify-content: center;
+}
+
+p{
+  font-family: "Outfit";
+}
+h4{
+  font-family: "Outfit";
+  font-weight: normal;
+  text-align: center;
+}
+h4.bolder{
+  font-weight: bold;
+}
+h3{
+  font-family: "Outfit";
+  font-weight: normal;
+}
+h2{
+  font-family: "Outfit";
+  font-weight: bolder;
+  text-align: center;
+  font-size: 30px;
+}
+h1{
+  text-align: center;
+  font-family: "Outfit";
+}
+
+h2.lighter{
+  font-weight: normal;
+}
+#roundedcorners{
+  border-radius: 15px;
+  background: #14213dff;
+  padding: 20px;
+  color:white;
+  
+}
+/*row row*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.centerrow {
+  align-self: center;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column.smol {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.column.half {
+  float: left;
+  width: 49%;
+  padding: 15px;
+}
+
+.column.img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width:49%;
+}
+
+.column.frame {
+  margin-top: 8px;
+  vertical-align: middle;
+  width:49%;
+  display: table-cell;
+}
+
+/*for mobile users*/
+@media (orientation: portrait) {
+    /* Styles for portrait orientation */
+td{
+  font-size: 2px;
+}
+.column.half{
+  width:100%;
+}
+.column.smol.menuindex{
+  width:100%
+}
+}
+
+
+/*table formating for menus*/
+table tr td {
+  width:13%;
+}
+table{
+  max-width: 800px;
+  font-family: "outfit";
+
+}
+.bold{
+  font-weight: bold;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td{
+  font-size: 20px;
+}
+
+td.menu{
+  font-size: 14px;
+}
+
+#foodmenu {
+  tr{
+     border-bottom: 0.5px ridge gray;
+  }
+}
+/*Collumn formeting part 2*/
+
+    #sides {
+        margin:0;
+    }
+    #left {
+        float:left;
+        margin-left: 5%;
+        width:28%;
+        border:1px solid #000;
+        min-height:100px;
+        overflow:hidden;
+    }
+    #right {
+        float:left;
+        margin-left: 5%;
+        width:28%;
+        border:1px solid #000;
+        min-height:100px;
+        overflow:hidden;
+    }
+    #centre {
+        float:left;
+        margin-left: 5%;
+        width:28%;
+        border:1px solid #000;
+        min-height:100px;
+        overflow:hidden;
+    }
+    @media screen and (max-width: 300px), (orientation: portrait) {
+        #left {
+            width:100%;
+            float: left;
+            margin: 1px;
+            border:1px solid #000;
+            min-height:100px;
+        }
+        #right {
+            width:100%;
+            margin: 1px;
+            border:1px solid #000;
+            min-height:100px;
+        }
+        #centre {
+            width:100%;
+            float: right;
+            margin: 1px;
+            border:1px solid #000;
+            min-height:100px;
+        }
+    }
+/*Star Formating */
+.checked {
+  color: orange;
+}
+
+star{
+  align-self: center;
+  size: 150%;
+}
+
+/*Button formatting*/
+.button {
+  background-color: #1d8a99ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: "outfit";
+  margin:auto;
+  width: 50%;
+}
+
+a{
+  text-align: center; 
+}
+
